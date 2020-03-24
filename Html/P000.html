@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<link rel="apple-touch-icon" sizes="180x180" href="../Icon/01.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../Icon/02.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../Icon/03.png">
+<link rel="manifest" href="../Icon/site.webmanifest">
+<link rel="mask-icon" href="../Icon/06.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../Icon/favicon.ico">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-config" content="../Icon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<style type="text/css">
+p{font-family:Arial;font-size:25px;}
+.container{border:10px solid red;position:absolute;width:900px;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);}
+.button{background-color:red;border:none;color:white;padding:20px 34px;text-align:center;text-decoration:none;display:inline-block;font-family:Arial;font-size:20px;margin:4px 2px;cursor:pointer;}
+.button2{background-color:green;}
+</style>
+<script>
+function tg(){
+document.getElementById("a").style.display = "none";
+document.getElementById("c").style.display = "block";
+document.getElementById("p1").innerHTML = "O Javascript está habilitado no navegador.";
+document.getElementById("p2").innerHTML = "Para acessar o site clique em CONTINUAR.";
+document.getElementById("b").style.border = "10px solid green";
+}
+</script>
+<title>Prontuário</title>
+</head>
+<body onload="tg()" style="overflow:hidden;">
+<div id="b" class="container">
+<div style="text-align:center;">
+<img src="../Image/01.png" alt="" oncontextmenu="return false;" style="width:18%;margin-top:40px;"/>
+</div>
+<div style="text-align:center;">
+<p id="p1">O Javascript está desabilitado no navegador!</p>
+<p id="p2">Habilite o Javascript nas configurações do browser e clique em ATUALIZAR.</p>
+</div>
+<div id="c" style="display:none;text-align:center;margin-bottom:35px;">
+<a class="button button2" href="/">CONTINUAR</a>
+</div>
+<div id="a" style="display:block;text-align:center;margin-bottom:35px;">
+<a class="button" href="P000.html">ATUALIZAR</a>
+</div>
+</div>
+</body>
+</html>
